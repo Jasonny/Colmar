@@ -7,10 +7,9 @@ html {
 
 body {
 line-height: 1.4;
-
-
-
 }
+
+
 
 
 
@@ -88,7 +87,86 @@ line-height: 1.4;
       display: flex;
       justify-content: space-between;
       padding: 0px 24px;
-
-
   }
+}
+
+/* Main Banner section */
+
+.main-banner {
+  display: flex;
+  align-items: center;
+  background-color: lightgrey;
+  color: #4f4f4f;
+}
+
+
+.left {
+  width: 60%;
+  height: auto;
+  padding: 32px 24px;
+}
+
+.left img {
+  width: 100%;
+  }
+
+.right {
+    width: 30%;
+    padding-left: 24px;
+
+}
+
+ .right h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+
+.right p {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.4;
+    width: 100%
+}
+
+button {
+    width: 90%;
+    border: none;
+    line-height: 2;
+    padding: 8px 0px;
+    background-color: #4f4f4f;
+    color: white;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    width: 100%;
+    padding: 0px;
+  }
+
+.right {
+  width: 100%;
+}
+
+.right h1 {
+   font-size: 1.8rem;
+   padding: 32px 16px;
+   line height: 1.4;
+}
+
+.right p {
+    font-size: 1.2rem;
+    padding: 0px 16px 24px 16px;
+}
+
+button {
+  background-color: #a4a4a6;
+  margin-bottom: 32px;
+}
+
 }
