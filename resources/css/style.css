@@ -10,12 +10,10 @@ line-height: 1.4;
 }
 
 
-
-
-
 .container {
   width: 100%;
   margin: auto;
+  display: flex;
 }
 
 /* Header Section */
@@ -83,10 +81,10 @@ line-height: 1.4;
 
 
    nav.mobile {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding: 0px 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 24px;
   }
 }
 
@@ -168,5 +166,151 @@ button {
   background-color: #a4a4a6;
   margin-bottom: 32px;
 }
+
+}
+
+/* Information Section */
+
+.information {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  color: #4f4f4f;
+}
+
+.information .right {
+  padding: 16px 0px;
+  width: 40%;
+}
+
+.left-text {
+  padding: 32px 0px;
+  width: 100%s;
+}
+
+.left h3 {
+  font-size: 2.7rem;
+  font-weight: 900;
+  padding-bottom: 24px;
+}
+
+.left p {
+  font-size: 1.3rem;
+}
+
+
+
+.orientation,
+.campus,
+.guest {
+  display: flex;
+  align-items: center;
+}
+
+.information .right img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.text {
+  width: 65%;
+}
+
+.text h4 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.text p {
+  padding: 8px 0px;
+  font-size: 1.4rem;
+}
+
+.text a {
+  font-size: 1.2rem;
+}
+
+
+.guest {
+  background-color: lightgrey;
+}
+
+.right a {
+  color: blue;
+}
+
+.right a:hover {
+  color: red;
+}
+
+.information-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .information {
+    display: none;
+  }
+
+  .information-mobile {
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    color: #4f4f4f;
+  }
+
+  .orientation-mobile,
+  .campus-mobile,
+  .guest-mobile {
+    display: flex;
+    flex-direction: column;
+ }
+
+  .orientation-mobile {
+    margin: 16px 16px 32px 16px;
+  }
+
+  .campus-mobile,
+  .guest-mobile {
+    margin: 0px 16px;
+  }
+
+  .guest-mobile {
+    background-color: white;
+  }
+
+
+  .information-mobile img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-mobile {
+    line height: 1.4;
+    padding: 32px 16px;
+  }
+
+  .text-mobile h4 {
+     font-size: 1.8rem;
+     font-weight: 700;
+  }
+
+  .text-mobile p {
+     font-size: 1.3rem;
+     line-height: 1.8;
+  }
+
+  .text-mobile a {
+    font-size: 1.2rem;
+  }
+
+  .text-mobile a {
+    color: blue;
+  }
+
+  .text-mobile a:hover {
+    color: red;
+  }
 
 }
