@@ -127,7 +127,7 @@ line-height: 1.4;
     width: 100%
 }
 
-button {
+.main-banner button {
     width: 90%;
     border: none;
     line-height: 2;
@@ -312,5 +312,94 @@ button {
   .text-mobile a:hover {
     color: red;
   }
+
+}
+
+/* Courses Section */
+
+.learning {
+  font-family: "Open Sans", sans-serif;
+  color: #4f4f4f;
+  background-color: lightgrey;
+}
+
+.learning h3 {
+  padding: 32px 0px;;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 900;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px 72px;
+  width: 113%;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+}
+
+.course {
+  width: 25%;
+  padding: 16px;
+}
+
+.course-text {
+  background-color: white;
+  line-height: 1.8;
+  padding: 16px 16px 24px 16px;
+}
+
+.course h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+
+.course-p {
+  padding: 8px 0px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.courses-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .learning {
+    background-color: white;
+  }
+
+.courses {
+  display: none;
+}
+
+.courses-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.courses-mobile button {
+  border: none;
+  line-height: 2;
+  padding: 16px 16px 24px 16px;
+  background-color: lightgrey;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  margin-left: 24px;
+  align-self: center;
+  width: 90%;
+}
+
+.courses-mobile button:hover {
+  color: red;
+}
+
 
 }
