@@ -499,5 +499,28 @@ button {
 
 }
 
+}
 
+/* Footer section */
+
+footer {
+  font-family: "Open Sans", sans-serif;
+  color: #4f4f4f;
+
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer-right {
+    display: none;
+  }
+
+  .footer-left {
+    margin-top: 24px;
+  }
 }
