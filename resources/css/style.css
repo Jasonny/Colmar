@@ -382,7 +382,6 @@ button {
   display: flex;
   flex-direction: column;
   width: 100%;
-
 }
 
 .courses-mobile button {
@@ -397,8 +396,107 @@ button {
   width: 90%;
 }
 
+
 .courses-mobile button:hover {
   color: red;
+}
+
+}
+
+/* Thesis Section */
+
+.thesis-container {
+  font-family: "Open Sans", sans-serif;
+  color: #4f4f4f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.4;
+
+
+}
+.thesis {
+  display: flex;
+  padding: 32px 24px;
+}
+
+.thesis-left {
+  width: 60%;
+  height: auto;
+  padding-right: 24px;
+}
+
+.thesis-right {
+  width: 40%;
+  height: auto;
+}
+
+.thesis video {
+  width: 100%;
+}
+
+.thesis-container h3 {
+  padding: 32px 0px;;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 900;
+}
+
+.thesis-content {
+  display: flex;
+}
+
+.thesis-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+  width: 65%;
+
+}
+
+.top {
+  background-color: lightgrey;
+}
+
+.thesis h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.thesis img {
+  width: 35%;
+  height: 35%;
+  padding: 16px;
+}
+
+.thesis-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .thesis-container {
+    display: none;
+  }
+
+.thesis-mobile {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    color: #4f4f4f;
+}
+
+.thesis-mobile h3 {
+    padding: 32px 0px 16px 0px;
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 900;
+}
+
+.thesis-mobile video {
+  padding: 16px 0px 24px 0px;
+  width: 100%;
+
 }
 
 
