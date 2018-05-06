@@ -33,7 +33,6 @@ line-height: 1.4;
   padding-left: 24px;
   font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
-
   }
 
   .colmar {
@@ -54,7 +53,6 @@ line-height: 1.4;
     padding-left: 16px;
     font-family: "Open Sans", sans-serif;
     color: rgb(57, 56, 56);
-
   }
 
   .desktop a:hover {
@@ -136,6 +134,10 @@ line-height: 1.4;
     color: white;
 }
 
+.main-banner button:hover {
+  color: red;
+}
+
 @media only screen and (max-width: 480px) {
   .main-banner {
     display: flex;
@@ -154,7 +156,7 @@ line-height: 1.4;
 .right h1 {
    font-size: 1.8rem;
    padding: 32px 16px;
-   line height: 1.4;
+   line-height: 1.4;
 }
 
 .right p {
@@ -184,7 +186,7 @@ button {
 
 .left-text {
   padding: 32px 0px;
-  width: 100%s;
+  width: 100%;
 }
 
 .left h3 {
@@ -287,7 +289,7 @@ button {
   }
 
   .text-mobile {
-    line height: 1.4;
+    line-height: 1.4;
     padding: 32px 16px;
   }
 
@@ -496,7 +498,6 @@ button {
 .thesis-mobile video {
   padding: 16px 0px 24px 0px;
   width: 100%;
-
 }
 
 }
@@ -506,7 +507,7 @@ button {
 footer {
   font-family: "Open Sans", sans-serif;
   color: #4f4f4f;
-
+  opacity: 0.7;
 }
 
 .footer-container {
@@ -515,8 +516,20 @@ footer {
   padding: 16px 24px;
 }
 
+nav a {
+  padding-left: 10px;
+}
+
+footer a:hover {
+  color: #FA3535;
+}
+
+footer a:active {
+  color: #1561F6;
+}
+
 @media only screen and (max-width: 480px) {
-  .footer-right {
+  nav {
     display: none;
   }
 
